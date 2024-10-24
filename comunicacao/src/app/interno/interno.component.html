@@ -1,3 +1,10 @@
 <div class="meuEstilo">
-  <p>interno works!</p>
+VersaoUrna (para Votação) : {{versaoUrna}} <!--Imprimindo o que ta recebendo no INput do externo.component.html-->
+<h1>A Humanidade deve colonizar Marte?</h1>
+<button type="button" (click)="votar(true)">Concordo</button>
+<button type="button" (click)="votar(false)">Não Concordo</button>
+<br>
+Votos a Favor: {{aFavor}}
+<br>
+Votos Contra: {{contra}}
 </div>
