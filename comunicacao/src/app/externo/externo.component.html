@@ -1,3 +1,6 @@
 Versão na urna: <input type="text" (keyup)="receberVersaoUrna($event)">
-<app-interno [versaoUrna]="versao"></app-interno>  <!--Usou o [] pq a informação pode variar ao longo do código-->
 
+<app-interno [versaoUrna]="versao" #votos></app-interno>  <!--Usou o [] pq a informação pode variar ao longo do código. #votos -->
+Votos a Favor: {{votos.aFavor}} Votos Contra: {{votos.contra}}
+<br>
+Total de Votos: {{votos.aFavor + votos.contra}}
